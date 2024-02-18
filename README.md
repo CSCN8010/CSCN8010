@@ -1,3 +1,5 @@
+https://github.com/TessaAyv79/CSCN8010/blob/main/LAB6.html
+
 Welcome ot the CSCN8010 course repository. This is where the course notebooks will be (specifically, they will be in the `class_notebooks` folder. This is what the instructor will present in class)
 
 ## Setup
