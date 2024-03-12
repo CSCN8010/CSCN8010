@@ -1,10 +1,18 @@
 ## Setup
 To run the code on a local or remote machine, you can follow the recommendation below.
 We use `pip` and `venv`, which are the default Python environment management system and are effective for that purpose.
+
+#### Brief:
+
+1. From the root folder of the repository, run: `python ./setup/setup.py`
+2. Restart `vscode` and open the `setup/test_pytorch.ipynb` and `setup/test_tensorflow.ipynb` files. Set the right kernel for each and run them. If you get a `succeeded` message - the setup completed successfully.
+
+See below for more details.
+
 ### Prerequisite
 * The code was tested using `Python` 3.10.9 and 3.11.3, and the environment was set up using `pip` and `venv` (rather than `conda`). The instructors use `vscode` as the IDE.
 * Make sure your machine is compatible. This method supports setup for `Windows (x86_64)`, `Linux (x86_64)` and `MacOS (x86_64/ Apple-Silicon)`.
-* Make sure you have a compatible version of Python (3.7.x-3.11.x) and the necessary tools `pip` and `git` installed. You can check if they are installed and see their versions by running `python --version`, `pip --version` (or `pip3 --version`), and `git --version` in the command line. If any of these are missing, please install them according to the official guides: [python](https://www.python.org/downloads/), [pip](https://pip.pypa.io/en/stable/installation/) and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+* Make sure you have a compatible version of Python (3.10.x-3.11.x) and the necessary tools `pip` and `git` installed. You can check if they are installed and see their versions by running `python --version`, `pip --version` (or `pip3 --version`), and `git --version` in the command line. If any of these are missing, please install them according to the official guides: [python](https://www.python.org/downloads/), [pip](https://pip.pypa.io/en/stable/installation/) and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 ### Setup Steps
 1. To get a local copy of this repository, run `git clone REPOSITORYURL` in the command line (`REPOSITORYURL` is the web address of the repository in Github). This will create a new sub-folder with a local copy of the repository. Note that if you encounter any issues during the setup process below, you can delete this folder and start fresh by cloning again. The changes made during the setup should only affect files within this folder, so deleting it will give you a clean slate to work from. If there are any issues with the set up, make sure to have a look at the notes below.
 2. The goal of the setup process is to create _two_ virtual environments, one for `PyTorch` and one for `Tensorflow`, both of which will be CPU-only and without GPU support. This works well for this course, and simplifies the setup. The required packages as defined in the `requirements.txt` files will be installed in each environment, and `ipykernel` will be installed for each. There are two ways to accomplish this, so you can choose the method that works best for you:
